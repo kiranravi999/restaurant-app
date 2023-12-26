@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="index.html">BistroPal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="restaurants.html">Restaurant List<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Add Restaurant</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4 pt-4">
+    <h1 class="mt-4 mb-4" id="title">Add Restaurant</h1>
+    <p id="loading" class="alert alert-info" style="display: none;">Sending Data...</p>
+    <p id="error" class="alert alert-danger" style="display: none;"> </p>
+    <p id="success" class="alert alert-info" style="display: none;"></p>
+    <form id='formContainer' action="">
+
+      <div class="form-group">
+        <label for="labelName">Name:</label>
+    <input  class='form-control' id='labelName' type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="cuisine">Cuisine:</label>
+    <input  class='form-control' id='cuisine' type="text" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="address">Address:</label>
+    <input  class='form-control' id='address' type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+    <input  class='form-control' id='city' type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+    <input  class='form-control' id='rating' step="0.1" type="number" required>
+      </div>
+
+      <button id="submit" type='submit' class="btn btn-primary">Add Restaurant</button>
+    </form>
+    <p class="text-center mt-4 mb-4">© 2023 BistroPal. All rights reserved.</p>
+</div>
+
+<script src="addrestaurant.js"></script>
+</body>
+</html>
